@@ -1,0 +1,36 @@
+<!DOCTYPE html><html dir="ltr" lang="en"><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
+  <title>Stencil Component Starter</title>
+  <script src="/build/components.js"></script>
+
+
+</head>
+<body>
+  <hello-world greet="Hello" name="World"></hello-world>
+  <search-movie url="http://www.omdbapi.com/?apikey=9035e80&amp;t="></search-movie>
+  <div id="programmaticHello"></div>
+  <script type="text/javascript">
+
+    // var helloWorld = new HelloWorld();
+
+    // var programmaticHello$ = document.getElementById("programmaticHello");
+    // programmaticHello$.append(helloWorld);
+  </script>
+
+
+  <script>
+    if ('serviceWorker' in navigator && location.protocol !== 'file:') {
+      // auto-unregister service worker during dev mode
+      navigator.serviceWorker.getRegistration().then(function(registration) {
+        if (registration) {
+          registration.unregister().then(function() { location.reload(true) });
+        }
+      });
+    }
+  </script>
+
+
+
+
+</body></html>

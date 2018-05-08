@@ -1,0 +1,47 @@
+{
+  "components": [
+    {
+      "tag": "hello-world",
+      "dependencies": [],
+      "componentClass": "HelloWorld",
+      "componentPath": "components/hello-world/hello-world.js",
+      "styles": {},
+      "props": [
+        {
+          "name": "name",
+          "type": "String",
+          "attr": "name"
+        }
+      ]
+    },
+    {
+      "tag": "search-movie",
+      "dependencies": [],
+      "componentClass": "SearchMovie",
+      "componentPath": "components/search-movie/SearchMovie.js",
+      "styles": {},
+      "props": [
+        {
+          "name": "url",
+          "type": "String",
+          "attr": "url"
+        }
+      ],
+      "states": [
+        {
+          "name": "results"
+        },
+        {
+          "name": "searchText"
+        }
+      ]
+    }
+  ],
+  "collections": [],
+  "compiler": {
+    "name": "@stencil/core",
+    "version": "0.7.22",
+    "typescriptVersion": "2.8.1"
+  },
+  "bundles": []
+}

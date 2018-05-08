@@ -1,0 +1,15 @@
+{
+  "namespace": "components",
+  "fsNamespace": "components",
+  "loader": "../components.js",
+  "corePolyfilled": "es5-build-disabled.js",
+  "core": "components.core.js",
+  "components": {
+    "hello-world": {
+      "$": "hello-world"
+    },
+    "search-movie": {
+      "$": "search-movie"
+    }
+  }
+}
